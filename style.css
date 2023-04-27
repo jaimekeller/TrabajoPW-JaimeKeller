@@ -1,11 +1,32 @@
-body{margin:10px}
+body{margin:10px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:burlywood;
+
+}
 
 #titular{
     font-size: 30px;
-    color: red;}
+    color: red;
+    font-family: 'monospace', Courier, monospace;
+    font-weight:bolder;
+    text-align: center;
+}
 
-#nombre{color:blueviolet}
+#nombre{color:blueviolet;
+        text-align: center;
+    }
 
-#legajo{padding-left: 40px;}
-#foto{padding-left: 60px}
+#legajo{text-align: center;
+}
+#foto{display: block;  
+    margin: auto;
 
+}
+
+
+/*Posicionamiento
+div.relative {
+    position: relative;
+    left;50px;
+    border: 3px
