@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <!--Inincia el espacio de html y setea el idioma defecto de la web-->
-<head>
+    
+    <head>
     <meta charset="UTF-8">
     <!--determina el grupo de caracteres que va a usar la web-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Le indicamos a la web que el tamanio va a ser el original-->
     <title id="Navegador">jaime</title>
-    <link rel="stylesheet" href="style.css"
+  
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{box-sizing: border-box;
+        }
+        .header{
+            border: 1px solid red;
+        }
+        .menu{
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
 
-</head>
+        }
+        .main{
+            width: 75%;
+            float: right;
+            padding: 15px;
+            border: 1px solid red;
+        }
+
+    </style>
+    <h1 id="titular">Mejores hamburgueserias en Buenos Aires</h1>
+    <h2 id="nombre">Jaime Keller</h2>
+    <h3 id="legajo">Legajo:64632</h3>
+    
+    <h4 id="foto"> <img src="https://media.istockphoto.com/id/1295387357/es/foto/es-dulce-como-t%C3%BA.jpg?s=612x612&w=0&k=20&c=iUZbYty-xGrONMrNVI_7yUphJPPDBpZICydPlXfH4WY=" alt="Hamburguesa"></h4>
+    </head>
 
 <body>
     <header id="header">
@@ -22,14 +49,7 @@
         
     </style>
     <main>
-        <h1 id="titular">Mejores hamburgueserias en Buenos Aires</h1>
-        <h2 id="nombre">Jaime Keller</h2>
-        <h3 id="legajo">Legajo:64632</h3>
-        
-        <h4 id="foto"> <img src="https://media.istockphoto.com/id/1295387357/es/foto/es-dulce-como-t%C3%BA.jpg?s=612x612&w=0&k=20&c=iUZbYty-xGrONMrNVI_7yUphJPPDBpZICydPlXfH4WY=" alt="Hamburguesa"></h4>
-        
        
-
         <div id="menu_interactivo" class="menu">
             <ul>
                 <li>Ubicacion</li>
@@ -38,29 +58,47 @@
             </ul>
         </div>
        
-        <div id="contenedor-flex">
-            <div>Food Truck </div>
+        <div id="main" class="main">
+            <h1>Podio Segun Encuesta</h1>
+            <div id="contenedor-flex">
+                <div>Food Truck </div>
+                
+              </div>
             
-          </div>
-        
-          <div id="contenedor-flex2">
-            <div>BurguerTify</div>
-            <div>Mi Barrio </div>
-          </div>
-        
-          <div id="contenedor-flex3">
-            <div>Big Pons</div>
-            <div>Birra Bar</div>
-            <div>Voraz</div>
+              <div id="contenedor-flex2">
+                <div>BurguerTify</div>
+                <div>Mi Barrio </div>
+              </div>
+            
+              <div id="contenedor-flex3">
+                <div>Big Pons</div>
+                <div>Birra Bar</div>
+                <div>Voraz</div>
+    
+    
+              </div>
+            
+            <h1>
+                Big Pons</h1>
+                <li>Ubicacion: Fitz Roy 1731, Buenos Aires</li>
+                <li>Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
+                <li>Puntos Debiles: Papas, Precio elevado</li>
+            
+            <h1>
+               Birra Bar </h1>
+               <li>Ubicacion: Av. Carlos Calvo </li> 
+               <li>Puntos Fuertes: Calidad de la Carne, Frescura de los ingredientes</li>
+               <li>Puntos Debiles: Mala calidad de Postres, Limpieza del establecimiento</li>
 
+            <h1>Voraz</h1>
+            <li>Ubicacion: Federico Lacroze 2138</li>
+            <li>Puntos Fuertes: Estetica del Lugar, </li>
+            
 
-          </div>
-        
+        </div>
+       
     
 
-        <a href="https://www.youtube.com/watch?v=bZz2w4dOPRY">
-        <button type="button">No me toques</button>
-        </a>
         
         
         

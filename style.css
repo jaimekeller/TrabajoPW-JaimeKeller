@@ -30,6 +30,7 @@ img{
     width: 55vw;
 }
 
+
 @media screen and (max-width:480px) {
     #foto{display: none;}
     
@@ -73,11 +74,12 @@ img{
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 500px;
+    width: 400px;
     height: 100px;
     margin: 10px;
     background-color: lightblue;
     font-family: monospace,'Courier New', Courier;
+    
 }
 #contenedor-flex3 {
     display: flex;
@@ -95,6 +97,7 @@ img{
     margin: 10px;
     background-color: lightblue;
     font-family: monospace,'Courier New', Courier;
+    padding-bottom: 30px;
 }
 
 /*Posicionamiento
