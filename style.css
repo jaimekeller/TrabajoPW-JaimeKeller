@@ -24,18 +24,31 @@ body{margin:10px;
 
 }
 
-img{display: block;
+img{
+    display: block;
     margin: 0 auto;
     width: 55vw;
 }
 
+@media screen and (max-width:480px) {
+    #foto{display: none;}
+    
+    
+}
 
+#menu_interactivo{
+    font-size: larger;
+
+}
 #contenedor-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+*{
+    box-sizing: border-box;
+}
 
 #contenedor-flex div {
     text-align: center;
@@ -46,6 +59,42 @@ img{display: block;
     height: 100px;
     margin: 10px;
     background-color: lightblue;
+    font-family: monospace,'Courier New', Courier;
+}
+
+#contenedor-flex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-flex2 div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+    font-family: monospace,'Courier New', Courier;
+}
+#contenedor-flex3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-flex3 div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+    font-family: monospace,'Courier New', Courier;
 }
 
 /*Posicionamiento
