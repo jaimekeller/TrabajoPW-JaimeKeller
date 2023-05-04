@@ -18,20 +18,47 @@
         }
         
         
-        .menu{
-            width: 25%;
+        .row::after {
+            content:"";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"]{
             float: left;
-            padding: 15px;
-            border: 1px solid black;
-
-        }
-        .main{
-            width: 75%;
-            float: right;
-            padding: 15px;
+            padding: 10px;
             border: 1px solid black;
         }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
 
+
+        .menu-ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-li{ /* Preguntar porque no sale este menu*/
+            padding: 10px;
+            margin-bottom: 4px;
+            margin-top: 4px;
+            background-color: green;
+            color: white;
+        }
+        .menu-li :hover{
+            background-color: blue;
+        }
     </style>
     <h1 id="titular">Mejores hamburgueserias en Buenos Aires</h1>
     <h2 id="nombre">Jaime Keller</h2>
@@ -45,75 +72,77 @@
         <!--menu de navegacion, Registro de usuario, buscador, logo-->
     </header>
     <style>
-        
     </style>
+
+
     <main>
-       
-        <div id="menu_interactivo" class="menu">
-            <ul>
-                <li>Ubicacion</li>
-                <li>Rating</li>
-                <li>Deja tu opinion</li>
-            </ul>
-        </div>
-       
-        <div id="main" class="main">
-            <h1>Podio Segun Encuesta</h1>
-            <div id="contenedor-flex">
-                <div>Food Truck </div>
+        <div class="row">
+
+            <div id="menu" class="col-3">
+                <ul>
+                    <li>Ubicacion</li>
+                    <li>Rating</li>
+                    <li>Deja tu opinion</li>
+                </ul>
+            </div>
+        
+            <div id="main" class="col-9">
+                <h1>Podio Segun Encuesta</h1>
+                <div id="contenedor-flex">
+                    <div>Food Truck </div>
+                    
+                </div>
                 
-              </div>
-            
-              <div id="contenedor-flex2">
-                <div>BurguerTify</div>
-                <div>Kiddo </div>
-              </div>
-            
-              <div id="contenedor-flex3">
-                <div>Big Pons</div>
-                <div>Birra Bar</div>
-                <div>Voraz</div>
-    
-    
-              </div>
-            
-            <h1>
-                Big Pons</h1>
-                <li>Ubicacion: Fitz Roy 1731, Buenos Aires</li>
-                <li>Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
-                <li>Puntos Debiles: Papas, Precio elevado</li>
-            
-            <h1>
-               Birra Bar </h1>
-               <li>Ubicacion: Av. Carlos Calvo </li> 
-               <li>Puntos Fuertes: Calidad de la Carne, Frescura de los ingredientes</li>
-               <li>Puntos Debiles: Mala calidad de Postres, Limpieza del establecimiento</li>
+                <div id="contenedor-flex2">
+                    <div>BurguerTify</div>
+                    <div>Kiddo </div>
+                </div>
+                
+                <div id="contenedor-flex3">
+                    <div>Big Pons</div>
+                    <div>Birra Bar</div>
+                    <div>Voraz</div>
+        
+        
+                </div>
+                
+                <h1>
+                    Big Pons</h1>
+                    <li>Ubicacion: Fitz Roy 1731, Buenos Aires</li>
+                    <li>Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
+                    <li>Puntos Debiles: Papas, Precio elevado</li>
+                
+                <h1>
+                Birra Bar </h1>
+                <li>Ubicacion: Av. Carlos Calvo </li> 
+                <li>Puntos Fuertes: Calidad de la Carne, Frescura de los ingredientes</li>
+                <li>Puntos Debiles: Mala calidad de Postres, Limpieza del establecimiento</li>
 
-            <h1>Voraz</h1>
-            <li>Ubicacion: Federico Lacroze 2138</li>
-            <li>Puntos Fuertes: Estetica del Lugar, Buenas Papas </li>
-            <li>Puntos Debiles: Mucho Tiempo de espera, Hamburguesa un poco chica</li>
+                <h1>Voraz</h1>
+                <li>Ubicacion: Federico Lacroze 2138</li>
+                <li>Puntos Fuertes: Estetica del Lugar, Buenas Papas </li>
+                <li>Puntos Debiles: Mucho Tiempo de espera, Hamburguesa un poco chica</li>
 
-            <h1>BurguerTify</h1>
-            <li>Ubicacion: Costa Rica 5827</li>
-            <li>Puntos Fuertes: Mucha calidad de pan, Ingredientes muy buenos, Papas excelentes</li>
-            <li>Puntos Debiles: Mala Atencion, Mucho tiempo de espera</li>
+                <h1>BurguerTify</h1>
+                <li>Ubicacion: Costa Rica 5827</li>
+                <li>Puntos Fuertes: Mucha calidad de pan, Ingredientes muy buenos, Papas excelentes</li>
+                <li>Puntos Debiles: Mala Atencion, Mucho tiempo de espera</li>
 
-            <h1>Kiddo</h1>
-            <li>Ubicacion: Arévalo 2882, Palermo</li>
-            <li>Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
-            <li>Puntos Debiles: Poca variedad de hamburguesas</li>
+                <h1>Kiddo</h1>
+                <li>Ubicacion: Arévalo 2882, Palermo</li>
+                <li>Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
+                <li>Puntos Debiles: Poca variedad de hamburguesas</li>
 
-            <h1>FoodTruck</h1>
-            <li>Ubicacion: Av. Callao 2092</li>
-            <li>Puntos Fuertes: Variedad de Hamburguesas, Timepo de atencion, Calidad de hamburguesa </li>
-            <li>Puntos Debiles: Local chico</li>
+                <h1>FoodTruck</h1>
+                <li>Ubicacion: Av. Callao 2092</li>
+                <li>Puntos Fuertes: Variedad de Hamburguesas, Timepo de atencion, Calidad de hamburguesa </li>
+                <li>Puntos Debiles: Local chico</li>
 
 
-            
+                
 
+            </div>
         </div>
-       
     
 
         

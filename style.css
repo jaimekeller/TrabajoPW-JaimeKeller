@@ -31,13 +31,16 @@ img{
 }
 
 
-@media screen and (max-width:480px) {
-    #foto{display: none;}
+@media only screen and (max-width: 768px) {
+    /* Si es una pantalla de Telefono*/
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
     
-    
-}
 
-#menu_interactivo{
+
+#menu{
     font-size: larger;
 
 }
