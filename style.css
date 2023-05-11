@@ -30,15 +30,20 @@ img{
     width: 55vw;
 }
 
-
+#podio{
+    text-align: left;
+}
 @media only screen and (max-width: 768px) {
     /* Si es una pantalla de Telefono*/
     [class*="col-"] {
       width: 100%;
     }
-  }
+}
     
 
+#tarjeta-bp{
+    background-color:  lightblue;
+}
 
 #menu{
     font-size: larger;

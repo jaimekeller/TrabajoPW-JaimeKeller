@@ -4,72 +4,79 @@
     <!--Inincia el espacio de html y setea el idioma defecto de la web-->
     
     <head>
-    <meta charset="UTF-8">
-    <!--determina el grupo de caracteres que va a usar la web-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--para que sea compatible con microsoft edge-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Le indicamos a la web que el tamanio va a ser el original-->
-    <title id="Navegador">jaime</title>
-  
-    <link rel="stylesheet" href="style.css">
-    <style>
-        *{box-sizing: border-box;
-        }
-        
-        
-        .row::after {
-            content:"";
-            clear: both;
-            display: table;
-        }
-
-        [class*="col-"]{
-            float: left;
-            padding: 10px;
-            border: 1px solid black;
-        }
-        .col-1 {width: 8.33%;}
-        .col-2 {width: 16.66%;}
-        .col-3 {width: 25%;}
-        .col-4 {width: 33.33%;}
-        .col-5 {width: 41.66%;}
-        .col-6 {width: 50%;}
-        .col-7 {width: 58.33%;}
-        .col-8 {width: 66.66%;}
-        .col-9 {width: 75%;}
-        .col-10 {width: 83.33%;}
-        .col-11 {width: 91.66%;}
-        .col-12 {width: 100%;}
-
-
-        .menu-ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu-li{ /* Preguntar porque no sale este menu*/
-            padding: 10px;
-            margin-bottom: 4px;
-            margin-top: 4px;
-            background-color: green;
-            color: white;
-        }
-        .menu-li :hover{
-            background-color: blue;
-        }
-    </style>
-    <h1 id="titular">Mejores hamburgueserias en Buenos Aires</h1>
-    <h2 id="nombre">Jaime Keller</h2>
-    <h3 id="legajo">Legajo:64632</h3>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <!--determina el grupo de caracteres que va a usar la web-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--para que sea compatible con microsoft edge-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Le indicamos a la web que el tamanio va a ser el original-->
+        <title id="Navegador">jaime</title>
     
-    <h4 id="foto"> <img src="https://media.istockphoto.com/id/1295387357/es/foto/es-dulce-como-t%C3%BA.jpg?s=612x612&w=0&k=20&c=iUZbYty-xGrONMrNVI_7yUphJPPDBpZICydPlXfH4WY=" alt="Hamburguesa"></h4>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{box-sizing: border-box;
+            }
+            
+            
+            .row::after {
+                content:"";
+                clear: both;
+                display: table;
+            }
+
+            [class*="col-"]{
+                float: left;
+                padding: 10px;
+                border: 1px solid black;
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+
+            .menu-ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu-li{ 
+                padding: 10px;
+                margin-bottom: 4px;
+                margin-top: 4px;
+                background-color: lightblue;
+                color: black;
+            }
+            .menu-li :hover{
+                background-color: blue;
+            }
+        </style>
+        <h1 id="titular">Mejores hamburgueserias en Buenos Aires</h1>
+        <h2 id="nombre">Jaime Keller</h2>
+        <h3 id="legajo">Legajo:64632</h3>
+
+        <h4 id="foto"> <img src="https://media.istockphoto.com/id/1295387357/es/foto/es-dulce-como-t%C3%BA.jpg?s=612x612&w=0&k=20&c=iUZbYty-xGrONMrNVI_7yUphJPPDBpZICydPlXfH4WY=" alt="Hamburguesa"></h4>
+        
+
+
     </head>
+
 
 <body>
     <header id="header">
         <!--menu de navegacion, Registro de usuario, buscador, logo-->
+       
+        
     </header>
     <style>
     </style>
@@ -79,16 +86,17 @@
         <div class="row">
 
             <div id="menu" class="col-3">
-                <ul>
-                    <li>Ubicacion</li>
-                    <li>Rating</li>
-                    <li>Deja tu opinion</li>
-                    <li>Conocer otras hamburgueserias</li>
+                <ul class="menu-ul">
+                    <li class="menu-li">Ubicacion</li>
+                    <li class="menu-li">Rating</li>
+                    <li class="menu-li">Deja tu opinion</li>
+                    <li class="menu-li">Conocer otras hamburgueserias</li>
                 </ul>
             </div>
+            
         
             <div id="main" class="col-9">
-                <h1>Podio Segun Encuesta</h1>
+                <h1 id="podio">Podio Segun Encuesta</h1>
                 <div id="contenedor-flex">
                     <div>Food Truck </div>
                     
@@ -112,33 +120,84 @@
                     <li>Ubicacion: Fitz Roy 1731, Buenos Aires</li>
                     <li>Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
                     <li>Puntos Debiles: Papas, Precio elevado</li>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://bigpons.com.ar/productos/20220621105940.jpeg" class="card-img-top" alt="...">
+                        <div id="tarjeta-bp"class="card-body">
+                          <h5 class="card-title">Reseñas</h5>
+                          <p class="card-text">Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </p>
+                          <a href="https://www.google.com/maps/search/big+pons/@-34.6297038,-58.448189,12z/data=!3m1!4b1" class="btn btn-primary">Direccion</a>
+                        </div>
+                      </div>
                 
                 <h1>
-                Birra Bar </h1>
-                <li>Ubicacion: Av. Carlos Calvo </li> 
-                <li>Puntos Fuertes: Calidad de la Carne, Frescura de los ingredientes</li>
-                <li>Puntos Debiles: Mala calidad de Postres, Limpieza del establecimiento</li>
+                    Birra Bar </h1>
+                    <li>Ubicacion: Av. Carlos Calvo </li> 
+                    <li>Puntos Fuertes: Calidad de la Carne, Frescura de los ingredientes</li>
+                    <li>Puntos Debiles: Mala calidad de Postres, Limpieza del establecimiento</li>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://www.google.com"  class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+
+
 
                 <h1>Voraz</h1>
-                <li>Ubicacion: Federico Lacroze 2138</li>
-                <li>Puntos Fuertes: Estetica del Lugar, Buenas Papas </li>
-                <li>Puntos Debiles: Mucho Tiempo de espera, Hamburguesa un poco chica</li>
+                    <li>Ubicacion: Federico Lacroze 2138</li>
+                    <li>Puntos Fuertes: Estetica del Lugar, Buenas Papas </li>
+                    <li>Puntos Debiles: Mucho Tiempo de espera, Hamburguesa un poco chica</li>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://www.google.com"  class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
 
                 <h1>BurguerTify</h1>
-                <li>Ubicacion: Costa Rica 5827</li>
-                <li>Puntos Fuertes: Mucha calidad de pan, Ingredientes muy buenos, Papas excelentes</li>
-                <li>Puntos Debiles: Mala Atencion, Mucho tiempo de espera</li>
+                    <li>Ubicacion: Costa Rica 5827</li>
+                    <li>Puntos Fuertes: Mucha calidad de pan, Ingredientes muy buenos, Papas excelentes</li>
+                    <li>Puntos Debiles: Mala Atencion, Mucho tiempo de espera</li>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://www.google.com"  class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
 
                 <h1>Kiddo</h1>
-                <li>Ubicacion: Arévalo 2882, Palermo</li>
-                <li>Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
-                <li>Puntos Debiles: Poca variedad de hamburguesas</li>
+                    <li>Ubicacion: Arévalo 2882, Palermo</li>
+                    <li>Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
+                    <li>Puntos Debiles: Poca variedad de hamburguesas</li>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://www.google.com"  class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
 
                 <h1>FoodTruck</h1>
-                <li>Ubicacion: Av. Callao 2092</li>
-                <li>Puntos Fuertes: Variedad de Hamburguesas, Timepo de atencion, Calidad de hamburguesa </li>
-                <li>Puntos Debiles: Local chico</li>
-
+                    <li>Ubicacion: Av. Callao 2092</li>
+                    <li>Puntos Fuertes: Variedad de Hamburguesas, Timepo de atencion, Calidad de hamburguesa </li>
+                    <li>Puntos Debiles: Local chico</li>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://www.google.com"  class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    
+                
 
                 
 
@@ -152,7 +211,6 @@
     </main>
     
     <footer>
-        
         <!--legales y datos relevantes-->
     </footer>
 </body>
