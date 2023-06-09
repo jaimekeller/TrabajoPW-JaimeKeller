@@ -1,28 +1,43 @@
 body{margin:10px;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color:burlywood;
+    background-color:dimgray;
 
 }
 
 #titular{
     font-size: 30px;
-    color: red;
+    color:whitesmoke;
     font-family: 'monospace', Courier, monospace;
     font-weight:bolder;
     text-align: center;
 }
 
-#nombre{color:blueviolet;
+#nombre{color:whitesmoke;
         text-align: center;
     }
 
 #legajo{text-align: center;
 }
-#foto{display: block;  
-    margin: auto;
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+nav li {
+    padding: 10px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    background-color: lightblue;
+    color: black;
+}
+
+nav li:hover {
+    background-color: blue;
+}
+
 
 img{
     display: block;
@@ -31,7 +46,7 @@ img{
 }
 
 #podio{
-    text-align: left;
+    text-align: center;
 }
 @media only screen and (max-width: 768px) {
     /* Si es una pantalla de Telefono*/
@@ -43,10 +58,12 @@ img{
 
 #tarjeta-bp{
     background-color:  lightblue;
+    
 }
 
 #tarjeta-birra{
     background-color:  lightblue;
+    display: inline;
 }
 
 #tarjeta-voraz{
@@ -133,6 +150,62 @@ img{
     font-family: monospace,'Courier New', Courier;
     
 }
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: lightblue;
+  }
+  
+  tr:nth-child(even) {
+    background-color: lightblue;
+  }
+  
+  caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant-image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    .col-4 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .col-4 {
+      width: 33.33%;
+      float: left;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    table th,
+    table td {
+      padding: 5px;
+      font-size: 12px;
+    }
+  }
+  
 
 /*Posicionamiento
 div.relative {

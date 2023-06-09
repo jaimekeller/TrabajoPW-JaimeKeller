@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <!--Inincia el espacio de html y setea el idioma defecto de la web-->
+    
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <!--determina el grupo de caracteres que va a usar la web-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--para que sea compatible con microsoft edge-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Le indicamos a la web que el tamanio va a ser el original-->
+        <title id="Navegador">jaime</title>
+        <script> src="script.js"</script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{box-sizing: border-box;
+            }
+            
+            
+            .row::after {
+                content:"";
+                clear: both;
+                display: table;
+            }
+
+            [class*="col-"]{
+                float: left;
+                padding: 10px;
+               
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+
+            .menu-ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu-li{ 
+                padding: 10px;
+                margin-bottom: 4px;
+                margin-top: 4px;
+                background-color: lightblue;
+                color: black;
+            }
+            .menu-li :hover{
+                background-color: blue;
+            }
+        </style>
+        <h1 id="titular">Mejores hamburgueserias en Buenos Aires</h1>
+        <h2 id="nombre">Jaime Keller</h2>
+        <h3 id="legajo">Legajo:64632</h3>
+
+        <div class="row">
+
+            <div id="foto" class="col-12">
+                <img src="https://media.istockphoto.com/id/1295387357/es/foto/es-dulce-como-t%C3%BA.jpg?s=612x612&w=0&k=20&c=iUZbYty-xGrONMrNVI_7yUphJPPDBpZICydPlXfH4WY=" alt="Hamburguesa"></h4>
+        </div>
+
+
+
+
+    </head>
+
+
+<body>
+    <header id="header">
+        <!--menu de navegacion, Registro de usuario, buscador, logo-->
+        <nav>
+            <ul>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#rating">Rating</a></li>
+                <li><a href="#opinion">Deja tu opinión</a></li>
+                <li><a href="#otras-hamburgueserias">Conocer otras hamburgueserías</a></li>
+            </ul>
+        </nav>
+        
+       
+        
+    </header>
+    <style>
+    </style>
+
+
+    <main>
+        <div class="row">
+
+            
+            
+        
+            <div id="main" class="col-12">
+                <h1 id="podio">Podio Segun Encuesta</h1>
+                <div id="contenedor-flex">
+                    <div>Food Truck </div>
+                    
+                </div>
+                
+                <div id="contenedor-flex2">
+                    <div>BurguerTify</div>
+                    <div>Kiddo </div>
+                </div>
+                
+                <div id="contenedor-flex3">
+                    <div>Big Pons</div>
+                    <div>Birra Bar</div>
+                    <div>Voraz</div>
+        
+        
+                </div>
+
+                <div class="col-sm-12 col-4">
+                
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://bigpons.com.ar/productos/20220621105940.jpeg" class="card-img-top" alt="...">
+                        <div id="tarjeta-bp"class="card-body">
+                          <h2 class="card-title">Big Pons</h2>
+                          <li>Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
+                          <li>Puntos Debiles: Papas, Precio elevado</li>
+                        
+                          <a href="https://www.google.com/maps/search/big+pons/@-34.6297038,-58.448189,12z/data=!3m1!4b1" class="btn btn-primary">Direccion</a>
+                          
+                        </div>
+                      </div>
+                </div>
+                
+                    
+    
+                <div class="col-sm-12 col-4">   
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.franquiciasdehamburguesas.com/images/foto-1.jpg" class="card-img-top" alt="...">
+                        <div id="tarjeta-birra" class="card-body">
+                          <h2 class="card-title">Birra Bar </h2>
+                          <li>Puntos Fuertes: Calidad de la Carne, Frescura de los ingredientes</li>
+                          <li>Puntos Debiles: Mala calidad de Postres, Limpieza del establecimiento</li>
+                          
+                          
+                          <a href="https://www.google.com/maps?q=birra+bar&source=lmns&entry=mt&bih=892&biw=1504&rlz=1C1CHZN_enAR1002AR1002&hl=es&sa=X&ved=2ahUKEwjwreTh5O3-AhVPq5UCHbNJBCYQ_AUoAXoECAEQAQ"  class="btn btn-primary">Direccion</a>
+                        </div>
+                      </div>
+                </div>
+                 
+
+                <div class="col-sm-12 col-4">
+                  
+                
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/05/26205355/voraz-hamburgueseria.jpg" class="card-img-top" alt="...">
+                        <div id="tarjeta-voraz" class="card-body">
+                          <h2 class="card-title">Voraz</h2>
+                        
+                          <li>Puntos Fuertes: Estetica del Lugar, Buenas Papas </li>
+                          <li>Puntos Debiles: Mucho Tiempo de espera, Hamburguesa un poco chica</li>
+                          
+                          <a href="https://www.google.com/maps/search/voraz/@-34.6094376,-58.5238636,11z/data=!3m1!4b1?hl=es"  class="btn btn-primary">Direccion</a>
+                        </div>
+                      </div>
+
+
+
+                </div>
+
+                 <div class="col-sm-12 col-4">
+      
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn5ku6Q0PtwiLRN2LCtX3naJ0rRenbkN4dw&usqp=CAU" class="card-img-top" alt="...">
+                        <div id="tarjeta-burguer" class="card-body">
+                            <h2 class="card-title">BurguerTify</h2>
+                            <li>Puntos Fuertes: Mucha calidad de pan, Ingredientes muy buenos, Papas excelentes</li>
+                            <li>Puntos Debiles: Mala Atencion, Mucho tiempo de espera</li>
+
+                          <a href="https://www.google.com/maps/place/Burgertify+Grill/@-34.58068,-58.4394089,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb593ac37c511:0xebde92f12a018bbc!8m2!3d-34.58068!4d-58.436834!16s%2Fg%2F11gb64r23q?hl=es"  class="btn btn-primary">Direccion</a>
+                        </div>
+                      </div>
+                 </div>
+                
+                 <div class="col-sm-12 col-4">
+                 
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI0nLZQSR0ip4FSC8ce1h0B9KGYHr69XrkMw&usqp=CAU" class="card-img-top" alt="...">
+                        <div id="tarjeta-kiddo" class="card-body">
+                          <h2 class="card-title">Kiddo</h2>
+                          <li>Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
+                          <li>Puntos Debiles: Poca variedad de hamburguesas</li>
+                          <a href="https://www.google.com/maps?q=kiddo+hamburgueria&bih=892&biw=1504&rlz=1C1CHZN_enAR1002AR1002&hl=es&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiV5o3Z7O3-AhUUqJUCHV01BHoQ_AUoAXoECAEQAw"  class="btn btn-primary">Direccion</a>
+                        </div>
+                      </div>
+
+                 </div>
+                
+                 <div class="col-sm-12 col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe35JmiVVqQH4zyg7P7g5mDTACyOnPr9Twmw&usqp=CAU" class="card-img-top" alt="...">
+                        <div id="tarjeta-ftruck" class="card-body">
+                          <h2 class="card-title">FoodTruck</h2>
+                          <li>Puntos Fuertes: Variedad de Hamburguesas, Timepo de atencion, Calidad de hamburguesa </li>
+                          <li>Puntos Debiles: Local chico</li>
+
+                          <a href="https://www.google.com/maps/search/foodtruck/@-34.5806795,-58.4471337,15z/data=!3m1!4b1?hl=es"  class="btn btn-primary">Direccion</a>
+                        </div>
+                      </div>
+                </div>           
+
+            </div>
+        </div>
+        
+
+        
+        
+        
+    </main>
+    
+    <footer>
+
+    </footer>
+ 
+</body>
+</html>
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" style="max-width: 900px; margin: 0 auto;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn5ku6Q0PtwiLRN2LCtX3naJ0rRenbkN4dw&usqp=CAU" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kiddo</h5>
+          <p>
+            <li>Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
+            <li>Puntos Debiles: Poca variedad de hamburguesas</li>
+        </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.sanity.io/images/jsdrzfkj/production-esmx/5e2316cc629ede9cd6646163efeafc5486161751-6240x4160.jpg?w=800&h=533&fit=crop&fm=webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>FoodTruck</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://bigpons.com.ar/productos/20220621105940.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Big Pons</h5>
+          <p><li>Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
+            <li>Puntos Debiles: Papas, Precio elevado</li></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div id="seccion-menu" >
+    <h3>Menus</h3>
+    <nav>
+    <ul class="col-3">
+        <li><a href="#ubicacion">FoodTruck</a></li>
+        <li><a href="#rating">BurguerTify</a></li>
+        <li><a href="#opinion">Kiddo</a></li>
+        <li><a href="#otras-hamburgueserias">Big Pons</a>
+        <li><a href="#menu-birra-bar">Birra Bar</a>
+        <li><a href="#menu-voraz">Voraz</a>
+
+        
+        </li>
+
+    </ul>
+</nav>
+</div>
