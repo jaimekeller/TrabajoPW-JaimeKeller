@@ -5,6 +5,8 @@ body{margin:10px;
 
 }
 
+
+
 #titular{
     font-size: 30px;
     color:whitesmoke;
@@ -26,17 +28,27 @@ nav ul {
     padding: 0;
 }
 
-nav li {
-    padding: 10px;
-    margin-bottom: 4px;
-    margin-top: 4px;
-    background-color: lightblue;
-    color: black;
+#contador_palusa {
+  text-align: center;
+  color: black;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 0 auto; 
+  max-width: 600px; 
 }
 
-nav li:hover {
-    background-color: blue;
+#contador_palusa h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
+
+#contador {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
 
 
 img{
