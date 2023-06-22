@@ -497,6 +497,29 @@
           pedidoBtn.addEventListener("click", realizarPedido);
         </script>
         
+      <div class="col-12" class="seccion reservas">
+        <h2>Hace Tu Reserva </h2>
+        <input type="text" id="nombre_reserva" placeholder="Nombre reserva">
+        <input type="text" id="restaurante_reserva" placeholder="Restaurante">
+        <input type="number" id="cantidad_reserva" placeholder="Cantidad de personas">
+        <input type="time" id="hora_reserva" placeholder="Hora de la reserva">
+        <button id="reserva-btn">Realizar Reserva </button>
+      </div>
+      <script>
+        function realizarReserva(){
+          var nombre_reserva = document.getElementById("nombre_reserva").value;
+          var restaurante_reserva = document.getElementById("restaurante_reserva").value;
+          var cantidad_reserva = document.getElementById("cantidad_reserva").value;
+          var hora_reserva = document.getElementById("hora_reserva").value;
+          if (nombre_reserva && restaurante_reserva && cantidad_reserva>0 && hora_reserva) {
+            alert("Reserva realizada en " +restaurante_reserva + "\n"+"Para: "+ nombre_reserva + "\n" +"Cantidad de personas: "+ cantidad_reserva + "\n" + "Hora: "+ hora_reserva)
+          } else {
+            alert("Por favor complete todos los campos.")
+
+          }
+
+        }
+      </script>
         
       
     </main>
