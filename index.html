@@ -12,7 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Le indicamos a la web que el tamanio va a ser el original-->
         <title id="Navegador">jaime</title>
-        <script> src="script.js"</script>
+        <script src="myScript.js"></script>
+
         <link rel="stylesheet" href="style.css">
         <style>
             *{box-sizing: border-box;
@@ -161,7 +162,7 @@
         <div> 
           <div class="col-4">
             <table>
-              <caption>Menu Food Truck</caption>
+              <caption id="titulos_menu">Menu Food Truck</caption>
               <thead>
                 <tr>
                   <th>Nombre</th>
@@ -204,7 +205,7 @@
           </div>
           <div class="col-4">
             <table>
-              <caption>Menu BurguerTify</caption>
+              <caption id="titulos_menu">Menu BurguerTify</caption>
               <thead>
                 <tr>
                   <th>Nombre</th>
@@ -247,7 +248,7 @@
           </div>
           <div class="col-4">
             <table>
-              <caption>Menu Kiddo</caption>
+              <caption id="titulos_menu">Menu Kiddo</caption>
               <thead>
                 <tr>
                   <th>Nombre</th>
@@ -288,7 +289,7 @@
         
         
         <table>
-          <caption>Las Hamburguesas mas famosas de cada lugar y su precio</caption>
+          <caption id="titulos_menu">Las Hamburguesas mas famosas de cada lugar y su precio</caption>
           
           <thead>
             <tr>
@@ -329,16 +330,173 @@
               <td>$3,200</td>
             </tr>
           </tbody>
+          
         </table>
 
-        <div class="order-section">
-          <h2>Realizar Pedido</h2>
-          <input type="text" id="nombre" placeholder="Nombre">
-          <input type="text" id="direccion" placeholder="Dirección">
-          <input type="text"  id="restaurante" placeholder="Restaurante">
-          <input type="number" id="cantidad" placeholder="Cantidad">
-          <button onclick="realizarPedido()">Realizar Pedido</button>
-        </div>
+        <div> 
+          <div class="col-4">
+            <table>
+              <caption id="titulos_menu">Menu Big Pons</caption>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Pecio</th>
+                  <th>Foto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Big Pons Doble</td>
+                  <td>$3,400</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/a939122f-34fd-4763-88da-fb44e91d2135.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+                </tr>
+                <tr>
+                  <td>Sweet Onion Doble</td>
+                  <td>$3,400</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/030c2ec5-8abe-4b0f-838c-525bcaf19fd4.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>American Simple</td>
+                  <td>$2,800</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/06480fa4-ea9b-4e2d-a68d-80d8321452be.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>California</td>
+                  <td>$2,850</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/51126b0d-a697-4eab-b332-dabefc76dc75.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>Royale Simple</td>
+                  <td>$2,700</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/2469ff83-679c-4cd9-9374-d591876207b3.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-4">
+            <table>
+              <caption id="titulos_menu">Menu Birra Bar</caption>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Pecio</th>
+                  <th>Foto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Egg Bacon</td>
+                  <td>$2,700</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/56cf91ad-6a94-43da-97d0-3386871d616b.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+                </tr>
+                <tr>
+                  <td>Hamburguesa Criolla</td>
+                  <td>$2,700</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/f0499fbd-db0f-4d50-bbc8-32e33f78cb32.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>Deluxe Bacon Cheese</td>
+                  <td>$3,300</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/70b99186-c0d2-4f25-ae3b-a521c16619ac.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>Hamburguesa Italiana</td>
+                  <td>$3,750</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/b8d03a4a-2520-4c04-97f9-3afd10014cf4.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>Hamburguesa Stalker</td>
+                  <td>$2,850</td>
+                  <td><img src="https://images.deliveryhero.io/image/pedidosya/products/09f80515-8a41-4f8a-a22e-f1f3909b4932.jpg?quality=90&width=1680&webp=1&dpi=1.5" alt="" class="restaurant-image"></td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-4">
+            <table>
+              <caption id="titulos_menu">Menu Voraz</caption>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Pecio</th>
+                  <th>Foto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cheesbacon simple</td>
+                  <td>$3,300</td>
+                  <td><img src="https://images.rappi.com.ar/products/a36d4879-71a0-44d7-9835-1b88be4f35a3-1596487691423.png?e=webp&d=511x511&q=85" alt="" class="restaurant-image"></td>
+                </tr>
+                <tr>
+                  <td>BBQ Chicken</td>
+                  <td>$2,800</td>
+                  <td><img src="https://images.rappi.com.ar/products/85ea1897-51af-411a-a3f6-b2d782d8dfe7-1663338784141.png?e=webp&d=511x511&q=85" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>CBR</td>
+                  <td>$2,400</td>
+                  <td><img src="https://images.rappi.com.ar/products/092396ff-22a9-4abf-b9c2-7c595d6684d4-1642605245538.png?e=webp&d=511x511&q=85" alt="" class="restaurant-image"></td>
+
+                </tr>
+                <tr>
+                  <td>Classic y papas</td>
+                  <td>$3,200</td>
+                  <td><img src="https://images.rappi.com.ar/products/bc096f9d-9eb1-4f9c-a40d-528157269224-1596059599427.png?e=webp&d=511x511&q=85" alt="" class="restaurant-image"></td>
+
+                </tr>
+                
+                
+              </tbody>
+
+
+            </table>
+
+        
+          </div>
+      </div>
+        
+
+        
+      <div class="col-12"  class="seccion-pedidos">
+        <h2>Realizar Pedido</h2>
+        <input type="text" id="nombre_pedido" placeholder="Nombre">
+        <input type="text" id="direccion" placeholder="Dirección">
+        <input type="text" id="restaurante" placeholder="Restaurante">
+        <input type="text" id="hamburguesa" placeholder="Hamburguesa">
+        <input type="number" id="cantidad" placeholder="Cantidad">
+        <button id="pedido-btn">Realizar Pedido</button>
+      </div>
+        
+        <script>
+          function realizarPedido() {
+            var nombre = document.getElementById("nombre_pedido").value;
+            var direccion = document.getElementById("direccion").value;
+            var cantidad = document.getElementById("cantidad").value;
+            var restaurante = document.getElementById('restaurante').value;
+            var hamburguesa = document.getElementById('hamburguesa').value;
+        
+            if (nombre && direccion && cantidad > 0 && restaurante && hamburguesa) {
+              alert("Pedido realizado de " + restaurante + "\n" + "\nNombre: " + nombre + "\nDirección: " + direccion +'\n'+"\nHamburguesa: "+ hamburguesa + "\nCantidad: " + cantidad);
+              
+            } else {
+              alert("Por favor complete todos los campos.");
+            }
+          }
+        
+          var pedidoBtn = document.getElementById("pedido-btn");
+          pedidoBtn.addEventListener("click", realizarPedido);
+        </script>
+        
         
       
     </main>
