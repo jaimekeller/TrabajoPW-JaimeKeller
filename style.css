@@ -68,45 +68,27 @@ body{margin:10px;
   width: 100%;
 }
 
-.menu-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-.menu-li {
-  padding: 10px;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  background-color: lightblue;
+
+
+#titular {
+  font-size: 40px;
   color: black;
+  font-family: 'monospace', Courier, monospace;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+  
+  text-transform: uppercase;
 }
 
-.menu-li:hover {
-  background-color: blue;
-}
 
 
-#titular{
-    font-size: 30px;
-    color:whitesmoke;
-    font-family: 'monospace', Courier, monospace;
-    font-weight:bolder;
-    text-align: center;
-}
 
-#nombre{color:whitesmoke;
-        text-align: center;
-    }
 
-#legajo{text-align: center;
-}
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
 #contador_palusa {
   text-align: center;
@@ -140,7 +122,15 @@ img{
 #podio{
     text-align: center;
     color: black;
+    padding-top: 20px;
     
+}
+
+#explicacion{
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
+
 }
 @media only screen and (max-width: 768px) {
     /* Si es una pantalla de Telefono*/
