@@ -140,6 +140,7 @@ img{
 #podio{
     text-align: center;
     color: black;
+    
 }
 @media only screen and (max-width: 768px) {
     /* Si es una pantalla de Telefono*/
@@ -204,6 +205,7 @@ img{
     margin: 10px;
     background-color: lightblue;
     font-family: monospace,'Courier New', Courier;
+    font-size: large;
 }
 
 #contenedor-flex2 {
@@ -222,6 +224,7 @@ img{
     margin: 10px;
     background-color: lightblue;
     font-family: monospace,'Courier New', Courier;
+    font-size: large;
     
 }
 #contenedor-flex3 {
@@ -241,6 +244,7 @@ img{
     margin: 10px;
     background-color: lightblue;
     font-family: monospace,'Courier New', Courier;
+    font-size: large;
     
 }
 
