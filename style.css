@@ -71,6 +71,9 @@ body{margin:10px;
 
 
 
+
+
+
 #titular {
   font-size: 40px;
   color: black;
@@ -168,6 +171,11 @@ img{
 }
 
 
+#nombre_carusel{
+  color: black;
+  background-color: white;
+
+}
 
 
 
