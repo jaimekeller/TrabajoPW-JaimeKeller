@@ -347,10 +347,19 @@ table {
 
 #titulos_menu{
   color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
+#segunda_tabla{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+#primera_tabla{
+  padding-bottom:50px;
+}
 
 /*Posicionamiento
 div.relative {
