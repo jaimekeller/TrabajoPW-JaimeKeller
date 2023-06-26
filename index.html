@@ -107,8 +107,8 @@
                   <div class="carousel-caption d-none d-md-block">
                     <h5 id="nombre_carusel">Kiddo</h5>
                     <p>
-                      <li>Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
-                      <li>Puntos Debiles: Poca variedad de hamburguesas</li>
+                      <li id="nombre_carusel" >Puntos Fuertes: Sabor de las papas, Atencion al cliente, carne de la hamburguesa</li>
+                      <li id="nombre_carusel">Puntos Debiles: Poca variedad de hamburguesas</li>
                   </p>
                   </div>
                 </div>
@@ -116,16 +116,16 @@
                   <img src="https://cdn.sanity.io/images/jsdrzfkj/production-esmx/5e2316cc629ede9cd6646163efeafc5486161751-6240x4160.jpg?w=800&h=533&fit=crop&fm=webp" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h5  id="nombre_carusel">FoodTruck</h5>
-                    <p><li>Puntos Fuertes: Variedad de Hamburguesas, Timepo de atencion, Calidad de hamburguesa </li>
-                      <li>Puntos Debiles: Local chico</li></p>
+                    <p><li id="nombre_carusel">Puntos Fuertes: Variedad de Hamburguesas, Timepo de atencion, Calidad de hamburguesa </li>
+                      <li id="nombre_carusel">Puntos Debiles: Local chico</li></p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/04/recetas-de-hamburguesas-caseras-de-carne-molida.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h5  id="nombre_carusel">Big Pons</h5>
-                    <p><li>Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
-                      <li>Puntos Debiles: Papas, Precio elevado</li></p>
+                    <p><li id="nombre_carusel">Puntos Fuertes: Pan, Variedad de elecciones, Buen Local </li>
+                      <li id="nombre_carusel">Puntos Debiles: Papas, Precio elevado</li></p>
                   </div>
                 </div>
               </div>
@@ -467,9 +467,13 @@
         
             if (nombre && direccion && cantidad > 0 && restaurante && hamburguesa) {
               alert("Pedido realizado de " + restaurante + "\n" + "\nNombre: " + nombre + "\nDirección: " + direccion +'\n'+"\nHamburguesa: "+ hamburguesa + "\nCantidad: " + cantidad);
+              pedidoBtn.style.backgroundColor = "green";
+              pedidoBtn.textContent="Pedido Realizado"
               
             } else {
               alert("Por favor complete todos los campos.");
+              pedidoBtn.style.backgroundColor = "red";
+              pedidoBtn.textContent="Pedido No Realizado"
             }
           }
         
@@ -478,12 +482,12 @@
         </script>
         
         <div class="col-12 seccion reservas">
-          <h2>Hace Tu Reserva </h2>
+          <h2>Hace Tu Reserva</h2>
           <input type="text" id="nombre_reserva" placeholder="Nombre reserva">
           <input type="text" id="restaurante_reserva" placeholder="Restaurante">
           <input type="number" id="cantidad_reserva" placeholder="Cantidad de personas">
           <input type="time" id="hora_reserva" placeholder="Hora de la reserva">
-          <button id="reserva-btn">Realizar Reserva </button>
+          <button id="reserva-btn">Realizar Reserva</button>
         </div>
         <script>
           function realizarReserva() {
@@ -491,6 +495,8 @@
             var restaurante_reserva = document.getElementById("restaurante_reserva").value;
             var cantidad_reserva = document.getElementById("cantidad_reserva").value;
             var hora_reserva = document.getElementById("hora_reserva").value;
+            var reservaBtn2 = document.getElementById("reserva-btn"); // Corregido el nombre de la variable
+        
             if (nombre_reserva && restaurante_reserva && cantidad_reserva > 0 && hora_reserva) {
               alert(
                 "Reserva realizada en " +
@@ -505,14 +511,19 @@
                   "Hora: " +
                   hora_reserva
               );
+              reservaBtn2.style.backgroundColor = "green";
+              reservaBtn2.textContent = "Reserva Realizada";
             } else {
               alert("Por favor complete todos los campos.");
+              reservaBtn2.style.backgroundColor = "red";
+              reservaBtn2.textContent = "Reserva No Realizada";
             }
           }
-          var pedidoBtn = document.getElementById("reserva-btn");
-          pedidoBtn.addEventListener("click", realizarReserva);
-
+        
+          var reservaBtn = document.getElementById("reserva-btn");
+          reservaBtn.addEventListener("click", realizarReserva);
         </script>
+        
         
     </main>
     
