@@ -5,9 +5,7 @@ body{margin:10px;
 
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 .row::after {
   content: "";
@@ -136,7 +134,7 @@ img{
 
 }
 @media only screen and (max-width: 768px) {
-    /* Si es una pantalla de Telefono*/
+    
     [class*="col-"] {
       width: 100%;
     }
@@ -360,9 +358,3 @@ table {
 #primera_tabla{
   padding-bottom:50px;
 }
-
-/*Posicionamiento
-div.relative {
-    position: relative;
-    left;50px;
-    border: 3px
